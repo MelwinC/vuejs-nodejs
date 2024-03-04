@@ -93,7 +93,7 @@ export default {
         },
 
         searchtitre() {
-            ChaussetteDataService.findBytitre(this.titre)
+            ChaussetteDataService.findByTitle(this.titre)
                 .then(response => {
                     this.Chaussettes = response.data;
                     this.setActiveChaussette(null);

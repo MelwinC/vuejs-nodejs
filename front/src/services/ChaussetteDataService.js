@@ -18,7 +18,7 @@ class ChaussetteDataService {
   deleteAll() {
     return http.delete(`/chaussette`)
   }
-  findBytitre(titre) {
+  findByTitle(titre) {
     return http.get(`/chaussette?titre=${titre}`)
   }
 }
